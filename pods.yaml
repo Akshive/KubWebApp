@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubernetes-pod
+  labels:
+    project: kuberneteswebapp
+spec:
+  containers:
+    - name: kubernetes-pod
+      image: akshive/kubwebapp
+      ports:
+        - containerPort: 31111
